@@ -5,7 +5,7 @@
 ```php
 class Input
 {
-  public function __construct(private ?string $value = null): self
+  public function __construct(private ?string $value = null)
   {
   }
   
@@ -24,7 +24,7 @@ class Input
   private const PREFIX = 'xxx';
   
   private mixed $value = null;
-
+  ...
   // Type casting
   public function printValue(): string
   {
